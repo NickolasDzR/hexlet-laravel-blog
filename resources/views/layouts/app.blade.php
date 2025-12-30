@@ -10,7 +10,16 @@
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
+<a href="..." data-confirm="Вы уверены?" data-method="delete" rel="nofollow">Удалить</a>
 <div class="container mt-4">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="{{ route('home') }}">Главная</a>
+                <a class="nav__link" href="{{ route('articles.index') }}">Статьи</a>
+            </li>
+        </ul>
+    </nav>
     <h1>@yield('header')</h1>
     <div>
         @yield('content')
