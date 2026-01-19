@@ -2,7 +2,6 @@
 
 @section('content')
     {{ html()->modelForm($article, 'POST', route('articles.store'))->open()  }}
-        @include('article.form')
-        {{ html()->submit('Создать')  }}
-    {{ html()->closeModelForm() }}
+        @include('forms.form', ['buttonText' => 'Создать'])
+    {{ html()->closeModelForm()  }}
 @endsection

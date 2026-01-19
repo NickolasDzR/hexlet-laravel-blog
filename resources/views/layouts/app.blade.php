@@ -17,6 +17,7 @@
             <li class="nav__item">
                 <a class="nav__link" href="{{ route('home') }}">Главная</a>
                 <a class="nav__link" href="{{ route('articles.index') }}">Статьи</a>
+                <a class="nav__link" href="{{ route('articles.create') }}">Создание статей</a>
             </li>
         </ul>
     </nav>
